@@ -6,7 +6,7 @@ ENV PATH=${PATH}:/root/.local/bin
 
 RUN apk add gcc musl-dev libffi-dev openssh
 
-RUN python3 -m pip install --user ansible
+RUN python3 -m pip install --user ansible github3.py
 
 ENTRYPOINT [ ]
 
