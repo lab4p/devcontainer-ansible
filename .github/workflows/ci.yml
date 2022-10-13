@@ -16,7 +16,11 @@ env:
 
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on:
+      - 'self-hosted'
+      - 'Linux'
+      - 'k3s-rpi'
+      - 'cached'
     steps:
       -
         name: Checkout
